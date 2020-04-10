@@ -1,0 +1,36 @@
+.footer {
+  padding: 60px 0;
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  &-nav {
+    margin-right: auto;
+    margin-left: 35px;
+  }
+  &-link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.social-footer {
+  display: flex;
+  align-items:center;
+  // margin-left: auto;
+}
+.social-link {
+  &:not(:last-child) {
+    margin-right: 21px;
+  }
+}

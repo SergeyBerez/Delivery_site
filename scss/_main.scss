@@ -1,0 +1,143 @@
+main {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 245, 245, 0) 1.04%,
+    #f5f5f5 100%
+  );
+}
+.promo {
+  margin-top: 40px;
+  // width: 100%;
+  padding: 68px 70px;
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  background: #fff1b8;
+  border-radius: 10px;
+  background-image: url(/img/bd-promo.png);
+  background-repeat: no-repeat;
+  background-position: top right -200px;
+  background-size: 1220px;
+
+  &-title {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    color: #302c34;
+  }
+
+  &-text {
+    max-width: 540px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302c34;
+  }
+}
+
+.section-heading {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(100% / 3 - 30px);
+  min-width: 200px;
+  margin: 15px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+
+  &-img {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &-text {
+    padding: 20px 24px 24px 34px;
+  }
+
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    color: #000000;
+  }
+
+  &-tag {
+    font-size: 12px;
+    line-height: 20px;
+    background: #262626;
+    border-radius: 2px;
+    color: #ffffff;
+    padding: 1.8px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.rating {
+  padding-left: 10px;
+  margin-right: 26px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffc107;
+  white-space: nowrap;
+
+  & img {
+    margin-right: 5px;
+  }
+}
+
+.price {
+  font-size: 18px;
+  line-height: 32px;
+  margin-right: 10px;
+  color: #8c8c8c;
+  white-space: nowrap;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+
+.category {
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
