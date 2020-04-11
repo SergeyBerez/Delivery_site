@@ -9,17 +9,21 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-block">
-          <img class="logo" src="img/logo.svg" alt="" />
+          <img
+            class="logo animated bounce delay-1s"
+            src="img/logo.svg"
+            alt=""
+          />
           <input
             class="input input-address"
             type="text"
-            placeholder="Адресс доставки"
+            placeholder="delivery address"
           />
           <div class="buttons">
-            <button class="button button-prm">
+            <button class="button button-primary">
               <svg
                 class="button-icon"
                 width="12"
@@ -30,7 +34,7 @@
                 <use xlink:href="img/enter.svg#enter"></use>
               </svg>
               <!-- <img src="./img/enter.svg" class="button-icon" alt="user" /> -->
-              <span class="button-text animated bounce"> Sing in</span>
+              <span class="button-text"> Sing in</span>
             </button>
             <button class="button button-crt">
               <svg
@@ -51,7 +55,7 @@
       </div>
     </header>
     <!-- <main>=============================</main> -->
-    <main>
+    <main class="main">
       <div class="container">
         <section class="promo">
           <h1 class="promo-title">
@@ -63,7 +67,7 @@
             in gloves, a mask and an antiseptic
           </p>
         </section>
-        <section class="section restaurants">
+        <section class="section-restaurants">
           <div class="section-heading">
             <h2 class="section-title">
               Restaurants
@@ -77,10 +81,14 @@
 
           <div class="cards">
             <div class="card wow fadeInUp" data-wow-delay="0.4s">
-              <img class="card-img" src="img/image.png" alt="image" />
+              <img
+                class="card-img"
+                src="img/Pasta-Pizza-Fasad.jpg"
+                alt="image"
+              />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">Pizza&Pasta</h3>
                   <span class="card-tag">50 min</span>
                 </div>
                 <div class="card-info">
@@ -89,16 +97,16 @@
                     7.5
                   </div>
                   <div class="price">10 $</div>
-                  <div class="category">pizzafffffffffffffff</div>
+                  <div class="category">pizza</div>
                 </div>
               </div>
             </div>
 
-            <div class="card wow fadeInUp" data-wow-delay="0.7s">
-              <img class="card-img" src="img/tanuki.jpg" alt="image" />
+            <div class="card wow fadeInUp tanuki" data-wow-delay="0.7s">
+              <img class="card-img" src="img/tanuki (2).jpg" alt="image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">Tanuki</h3>
                   <span class="card-tag">50 min</span>
                 </div>
                 <div class="card-info">
@@ -112,10 +120,10 @@
             </div>
 
             <div class="card wow fadeInUp" data-wow-delay="0.9s">
-              <img class="card-img" src="img/sushi.jpg" alt="image" />
+              <img class="card-img" src="img/sbaro.jpg" alt="image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">SBARO</h3>
                   <span class="card-tag">50 min</span>
                 </div>
                 <div class="card-info">
@@ -129,10 +137,10 @@
             </div>
 
             <div class="card wow fadeInUp" data-wow-delay="0.4s">
-              <img class="card-img" src="img/pizza-burger.jpg" alt="image" />
+              <img class="card-img" src="img/mego.jpg" alt="image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">Mego</h3>
                   <span class="card-tag">50 min</span>
                 </div>
                 <div class="card-info">
@@ -146,10 +154,10 @@
             </div>
 
             <div class="card wow fadeInUp" data-wow-delay="0.7s">
-              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <img class="card-img" src="img/florian.jpg" alt="image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">FLORIAN</h3>
                   <span class="card-tag">23 min</span>
                 </div>
                 <div class="card-info">
@@ -163,10 +171,10 @@
             </div>
 
             <div class="card wow fadeInUp" data-wow-delay="0.9s">
-              <img class="card-img" src="img/food-bang.jpg" alt="image" />
+              <img class="card-img" src="img/charlote.jpg" alt="image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
+                  <h3 class="card-title">CHARLOTE</h3>
                   <span class="card-tag">57 min</span>
                 </div>
                 <div class="card-info">
@@ -176,21 +184,141 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="card wow fadeInUp" data-wow-delay="0.4s">
-              <img class="card-img" src="img/image.png" alt="image" />
+        <section class="restaurant-page">
+          <div class="restaurant-page-title">
+            <div class="card-heading">
+              <h2 class="card-title">Pizza&Pasta</h2>
+            </div>
+            <div class="card-info">
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+                <span>7.5</span>
+              </div>
+              <div class="price">10 $</div>
+              <div class="category">pizza</div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
               <div class="card-text">
-                <div class="card-heading">
-                  <h3 class="card-title">Pizza plus</h3>
-                  <span class="card-tag">50 min</span>
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
                 </div>
-                <div class="card-info">
-                  <div class="rating">
-                    <img src="img/rating.png" alt="" />
-                    4.5
-                  </div>
-                  <div class="price">13 $</div>
-                  <div class="category">pizza</div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <div class="card-text">
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <div class="card-text">
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <div class="card-text">
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <div class="card-text">
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.9s">
+              <img class="card-img" src="img/maki.jpg" alt="image" />
+              <div class="card-text">
+                <h3 class="card-title-restaurant">Roll eel standard</h3>
+                <p class="title-description">
+                  Rice, eel, unagi sauce, sesame, nori seaweed.
+                </p>
+                <div class="order-block">
+                  <button class="button button-primary">
+                    add to cart
+                    <img
+                      class="cart-button-icon"
+                      src="img/cart_price.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="price-food">15 $</div>
                 </div>
               </div>
             </div>
@@ -204,7 +332,7 @@
         <div class="footer-block">
           <img src="img/logo.svg" alt="logo" class="footer-logo" />
           <nav class="footer-nav">
-            <a href="#" class="footer-link">restaurants</a>
+            <a href="#restorans" class="footer-link">restaurants</a>
             <a href="#" class="footer-link">couriers</a>
             <a href="#" class="footer-link">press center</a>
             <a href="#" class="footer-link">contacts</a>
@@ -222,7 +350,7 @@
         </div>
       </div>
     </footer>
-    <!-- -------------modal -->
+    <!-- ==================================modal -->
     <div class="modal">
       <div class="modal-dialog">
         <div class="modal-header">
@@ -263,7 +391,7 @@
         <div class="modal-footer">
           <span class="pricetag">100$</span>
           <div class="footer-buttons">
-            <button class="button button-prm">Order</button>
+            <button class="button button-primary">Order</button>
             <button class="button">turn of</button>
           </div>
         </div>

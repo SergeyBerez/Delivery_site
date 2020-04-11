@@ -128,7 +128,7 @@ a {
   fill: #ffff;
 }
 
-.button-prm {
+.button-primary {
   margin-right: 8px;
   background: #1890ff;
   border: 1px solid #d9d9d9;
@@ -136,11 +136,16 @@ a {
   color: #ffffff;
 }
 
-main {
+.main {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#f5f5f5));
   background: -webkit-linear-gradient(top, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
   background: -o-linear-gradient(top, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
   background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
+}
+
+.filter {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .promo {
@@ -214,10 +219,13 @@ main {
 }
 
 .card-img {
+  cursor: pointer;
   width: 384px;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: drop-shadow(0 0 10px rgba(255, 187, 0, 0.65));
+          filter: drop-shadow(0 0 10px rgba(255, 187, 0, 0.65));
 }
 
 .card-text {
@@ -237,6 +245,7 @@ main {
 }
 
 .card-title {
+  cursor: pointer;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
@@ -270,10 +279,15 @@ main {
   line-height: 32px;
   color: #ffc107;
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 .rating img {
   margin-right: 5px;
+}
+
+.rating span {
+  vertical-align: middle;
 }
 
 .price {
@@ -303,6 +317,52 @@ main {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.restaurant-page {
+  display: none;
+}
+
+.restaurant-page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-title-restaurant {
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.title-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
+}
+
+.order-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-button-icon {
+  margin-left: 5px;
+}
+
+.price-food {
+  margin-left: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .footer {
