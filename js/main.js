@@ -5,16 +5,16 @@ const main = document.querySelector(".main");
 const card = document.querySelector(".cards");
 const restaurantPage = document.querySelector(".restaurant-page");
 const restoransHome = document.querySelector("[ href='#restorans']");
- const promo = document.querySelector(".promo");
- const sectionRestaurants = document.querySelector(".section-restaurants");
+const promo = document.querySelector(".promo");
+const sectionRestaurants = document.querySelector(".section-restaurants");
 
 function toggleClass() {
+  document.body.style.overflow = "";
   modal.classList.toggle("active");
   main.classList.toggle("filter");
 }
 if (card) {
   card.addEventListener("click", function (e) {
-   
     if (e.target.closest(".tanuki")) {
       promo.style.display = "none";
       sectionRestaurants.style.display = "none";
@@ -30,12 +30,13 @@ restoransHome.addEventListener("click", function (e) {
 
 cartButton.addEventListener("click", function (e) {
   toggleClass();
-
+  document.body.style.overflow = "hidden";
   document.addEventListener("click", function (e) {
     if (
       e.target.classList.contains("modal") ||
       e.target.classList.contains("modal active")
     ) {
+      document.body.style.overflow = "";
       modal.classList.remove("active");
       main.classList.remove("filter");
     }
