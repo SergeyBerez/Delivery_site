@@ -1,114 +1,4 @@
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.493);
-  display: none;
-}
-.active {
-  display: flex;
-}
 
-.modal-dialog {
-  margin: auto;
-  padding: 40px 45px;
-  border-radius: 5px;
-  max-width: 780px;
-  width: 90%;
-
-  background: #ffff;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 45px;
-}
-.modal-title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: bold;
-}
-.modal-body {
-  margin-bottom: 50px;
-}
-.close {
-  font-size: 36px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.food {
-  &-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #d9d9d9;
-    margin-bottom: 15px;
-  }
-
-  &-name {
-    font-size: 18px;
-    line-height: 32px;
-  }
-  &-price {
-    display: block;
-    margin-left: auto;
-    margin-right: 47px;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 32px;
-  }
-  &-counter {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.counter-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 39px;
-  height: 32px;
-  background: #ffffff;
-  color: #40a9ff;
-  border: 1px solid #40a9ff;
-  box-sizing: border-box;
-  border-radius: 2px;
-  font-size: 16px;
-  line-height: 24px;
-}
-.counter {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 13px;
-}
-
-.modal-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.pricetag {
-  background: #262626;
-  border-radius: 5px;
-  color: #fff;
-  padding: 15px 20px;
-}
-.footer-buttons {
-  display: flex;
-  align-items: center;
-}
-.button {
-  cursor: pointer;
-}
 
 @media (max-width: 1300px) {
   .container {
@@ -193,6 +83,12 @@
 @media (max-width: 578px) {
   .container {
     width: 80%;
+  }
+  .header-nav {
+    margin-top: 20px;
+  }
+  .buttons{
+    margin-top: 20px;
   }
   .card-img {
     width: 100%;

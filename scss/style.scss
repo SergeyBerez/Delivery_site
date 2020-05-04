@@ -35,12 +35,14 @@ a {
   max-width: 1200px;
   width: 90%;
   margin: auto;
-  
 }
 @import "_header";
 // ================main=========================
 @import "_main";
 //=================footer========================
 @import "_footer";
+
+
+@import "_modal";
 
 @import "_media";

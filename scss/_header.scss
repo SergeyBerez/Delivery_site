@@ -1,13 +1,17 @@
 .header {
 }
 
-
 .header-block {
   padding-top: 40px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header-nav {
+  margin-right: auto;
+  margin-left: 35px;
 }
 .logo {
   margin-left: 10px;
@@ -40,10 +44,12 @@
 }
 
 .buttons {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   font-size: $fontSize-button;
   line-height: 24px;
+  margin-left: auto;
 }
 
 .button {

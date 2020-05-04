@@ -32,6 +32,7 @@ cartButton.addEventListener("click", function (e) {
   toggleClass();
   document.body.style.overflow = "hidden";
   document.addEventListener("click", function (e) {
+  
     if (
       e.target.classList.contains("modal") ||
       e.target.classList.contains("modal active")
